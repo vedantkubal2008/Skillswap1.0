@@ -3,203 +3,274 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Explore Students | SkillSwap</title>
+
+    <title>Explore Skills - SkillSwap</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <header class="site-header">
-        <div class="logo">Skill<span>Swap</span></div>
-        <nav class="navigation">
+<header>
+    <div class="container nav-bar">
+
+        <a href="index.html" class="brand">
+            Skill<span>Swap</span>
+        </a>
+
+        <nav>
             <a href="index.html">Home</a>
-            <a href="explore.html" class="active">Explore</a>
+            <a href="explore.html" class="current">Explore</a>
             <a href="offer.html">Offer a Skill</a>
         </nav>
-    </header>
 
-    <main>
-        <section class="page-heading">
-            <p class="small-title">browse</p>
-            <h1>Find someone to learn from</h1>
-            <p>
-                Browse students based on the skills they can teach
-                and the skills they want to learn.
-            </p>
-        </section>
+    </div>
+</header>
 
-        <!-- category filter (not functional yet, just links to the students section) -->
-        <section class="section">
-            <div class="section-title">
-                <p class="small-title">categories</p>
-                <h2>Browse by skill</h2>
-            </div>
 
-            <div class="category-list">
-                <a href="#students">Programming</a>
-                <a href="#students">Music</a>
-                <a href="#students">Design</a>
-                <a href="#students">Photography</a>
-                <a href="#students">Languages</a>
-                <a href="#students">Sports</a>
-            </div>
-        </section>
+<main>
 
-        <section class="section light-section" id="students">
-            <div class="section-title">
-                <p class="small-title">who's around</p>
-                <h2>Some available students</h2>
-            </div>
+<section class="page-header">
+    <div class="container">
 
-            <div class="student-grid">
+        <p class="label">EXPLORE</p>
 
-                <article class="student-card">
-                    <div class="student-header">
-                        <div class="large-avatar">A</div>
-                        <div>
-                            <h3>Arjun Mehta</h3>
-                            <p>Computer Science · 2nd Year</p>
-                        </div>
-                    </div>
-                    <div class="student-skills">
-                        <div>
-                            <span>CAN TEACH</span>
-                            <strong>C++</strong>
-                        </div>
-                        <div>
-                            <span>WANTS TO LEARN</span>
-                            <strong>Guitar</strong>
-                        </div>
-                    </div>
-                    <a href="#" class="profile-link">View profile -&gt;</a>
-                </article>
+        <h1>Find a student who can teach you.</h1>
 
-                <article class="student-card">
-                    <div class="student-header">
-                        <div class="large-avatar purple">R</div>
-                        <div>
-                            <h3>Riya Sharma</h3>
-                            <p>CSE & Buiseness · 1st Year</p>
-                        </div>
-                    </div>
-                    <div class="student-skills">
-                        <div>
-                            <span>CAN TEACH</span>
-                            <strong>Guitar</strong>
-                        </div>
-                        <div>
-                            <span>WANTS TO LEARN</span>
-                            <strong>C++</strong>
-                        </div>
-                    </div>
-                    <a href="#" class="profile-link">View profile -&gt;</a>
-                </article>
+        <p>
+            Browse a few example profiles and find a skill
+            that you would like to learn.
+        </p>
 
-                <article class="student-card">
-                    <div class="student-header">
-                        <div class="large-avatar orange">S</div>
-                        <div>
-                            <h3>Sameer Khan</h3>
-                            <p>Computer Science · 3rd Year</p>
-                        </div>
-                    </div>
-                    <div class="student-skills">
-                        <div>
-                            <span>CAN TEACH</span>
-                            <strong>Photography</strong>
-                        </div>
-                        <div>
-                            <span>WANTS TO LEARN</span>
-                            <strong>Photoshop</strong>
-                        </div>
-                    </div>
-                    <a href="#" class="profile-link">View profile -&gt;</a>
-                </article>
+    </div>
+</section>
 
-                <article class="student-card">
-                    <div class="student-header">
-                        <div class="large-avatar green">N</div>
-                        <div>
-                            <h3>Neha Patil</h3>
-                            <p>CSE AiMl · 2nd Year</p>
-                        </div>
-                    </div>
-                    <div class="student-skills">
-                        <div>
-                            <span>CAN TEACH</span>
-                            <strong>Python</strong>
-                        </div>
-                        <div>
-                            <span>WANTS TO LEARN</span>
-                            <strong>UI Design</strong>
-                        </div>
-                    </div>
-                    <a href="#" class="profile-link">View profile -&gt;</a>
-                </article>
 
-            </div>
-        </section>
+<section class="section">
+    <div class="container">
 
-        <section class="section">
-            <div class="section-title">
-                <p class="small-title">some examples</p>
-                <h2>Student skill exchange</h2>
-                <p>A quick overview of some possible exchanges.</p>
-            </div>
+        <div class="search-area">
 
-            <div class="table-container">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Student</th>
-                            <th>Can Teach</th>
-                            <th>Wants To Learn</th>
-                            <th>Year</th>
-                            <th>Preferred Mode</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Arjun Mehta</td>
-                            <td>C++</td>
-                            <td>Guitar</td>
-                            <td>2nd</td>
-                            <td>Offline</td>
-                        </tr>
-                        <tr>
-                            <td>Riya Sharma</td>
-                            <td>Guitar</td>
-                            <td>C++</td>
-                            <td>1st</td>
-                            <td>Both</td>
-                        </tr>
-                        <tr>
-                            <td>Sameer Khan</td>
-                            <td>Photography</td>
-                            <td>Photoshop</td>
-                            <td>3rd</td>
-                            <td>Offline</td>
-                        </tr>
-                        <tr>
-                            <td>Neha Patil</td>
-                            <td>Python</td>
-                            <td>UI Design</td>
-                            <td>2nd</td>
-                            <td>Online</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
+            <label for="skill-search">Search for a skill</label>
 
-    </main>
+            <input
+                type="text"
+                id="skill-search"
+                placeholder="Try Python, guitar, design..."
+            >
 
-    <footer>
-        <div class="footer-content">
-            <div class="logo">Skill<span>Swap</span></div>
-            <p>Learn from your fellow students.</p>
         </div>
-        <p class="copyright">SCALER SCHOOL OF TECHNOLOGY</p>
-    </footer>
+
+
+        <div class="student-grid">
+
+            <article class="student-card">
+
+                <div class="student-top">
+                    <div class="avatar">AK</div>
+
+                    <div>
+                        <h2>Aditya</h2>
+                        <p>Programming</p>
+                    </div>
+                </div>
+
+                <div class="skill-tag">
+                    Python
+                </div>
+
+                <p>
+                    I can help beginners understand Python basics
+                    and simple programming problems.
+                </p>
+
+                <div class="card-footer">
+                    <span>Beginner friendly</span>
+                    <button type="button">View</button>
+                </div>
+
+            </article>
+
+
+            <article class="student-card">
+
+                <div class="student-top">
+                    <div class="avatar">RS</div>
+
+                    <div>
+                        <h2>Riya</h2>
+                        <p>Music</p>
+                    </div>
+                </div>
+
+                <div class="skill-tag">
+                    Guitar
+                </div>
+
+                <p>
+                    I can teach basic chords, strumming patterns
+                    and a few easy songs.
+                </p>
+
+                <div class="card-footer">
+                    <span>Beginner friendly</span>
+                    <button type="button">View</button>
+                </div>
+
+            </article>
+
+
+            <article class="student-card">
+
+                <div class="student-top">
+                    <div class="avatar">VN</div>
+
+                    <div>
+                        <h2>Ved</h2>
+                        <p>Design</p>
+                    </div>
+                </div>
+
+                <div class="skill-tag">
+                    Canva
+                </div>
+
+                <p>
+                    I can help with posters, presentations and
+                    simple social-media designs.
+                </p>
+
+                <div class="card-footer">
+                    <span>Beginner friendly</span>
+                    <button type="button">View</button>
+                </div>
+
+            </article>
+
+
+            <article class="student-card">
+
+                <div class="student-top">
+                    <div class="avatar">SP</div>
+
+                    <div>
+                        <h2>Sahil</h2>
+                        <p>Photography</p>
+                    </div>
+                </div>
+
+                <div class="skill-tag">
+                    Mobile Photography
+                </div>
+
+                <p>
+                    I can share tips about framing, lighting and
+                    editing photographs on a phone.
+                </p>
+
+                <div class="card-footer">
+                    <span>Intermediate</span>
+                    <button type="button">View</button>
+                </div>
+
+            </article>
+
+
+            <article class="student-card">
+
+                <div class="student-top">
+                    <div class="avatar">NM</div>
+
+                    <div>
+                        <h2>Neha</h2>
+                        <p>Programming</p>
+                    </div>
+                </div>
+
+                <div class="skill-tag">
+                    C++
+                </div>
+
+                <p>
+                    I can help with C++ fundamentals, loops,
+                    functions and basic problem solving.
+                </p>
+
+                <div class="card-footer">
+                    <span>Intermediate</span>
+                    <button type="button">View</button>
+                </div>
+
+            </article>
+
+
+            <article class="student-card">
+
+                <div class="student-top">
+                    <div class="avatar">KR</div>
+
+                    <div>
+                        <h2>Karan</h2>
+                        <p>Creative</p>
+                    </div>
+                </div>
+
+                <div class="skill-tag">
+                    Drawing
+                </div>
+
+                <p>
+                    I can teach basic sketching techniques and
+                    help with drawing practice.
+                </p>
+
+                <div class="card-footer">
+                    <span>Beginner friendly</span>
+                    <button type="button">View</button>
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+</section>
+
+
+<section class="cta">
+    <div class="container">
+
+        <h2>Don't see your skill?</h2>
+
+        <p>
+            Add it to SkillSwap and give someone else a chance to learn.
+        </p>
+
+        <a href="offer.html" class="btn primary">
+            Offer a Skill
+        </a>
+
+    </div>
+</section>
+
+</main>
+
+
+<footer>
+    <div class="container footer-content">
+
+        <div>
+            <a href="index.html" class="brand">
+                Skill<span>Swap</span>
+            </a>
+
+            <p>Students learning from students.</p>
+        </div>
+
+        <p>SCALER SCHOOL OF TECHNOLOGY</p>
+
+    </div>
+</footer>
 
 </body>
 </html>
