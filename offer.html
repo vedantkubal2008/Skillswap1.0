@@ -1,170 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Offer Your Skill | SkillSwap</title>
+    <title>Offer a Skill - SkillSwap</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-
-    <header class="site-header">
-        <div class="logo">Skill<span>Swap</span></div>
-        <nav class="navigation">
-            <a href="index.html">Home</a>
-            <a href="explore.html">Explore</a>
-            <a href="offer.html" class="active">Offer a Skill</a>
-        </nav>
-    </header>
-
-    <main>
-        <section class="page-heading">
-            <p class="small-title">add yourself</p>
-            <h1>Offer something you know</h1>
-        </section>
-
-        <section class="form-section">
-
-            <div class="form-info">
-                <p class="small-title">quick note</p>
-                <h2>Make sure the info you provide is <u><em>Genuine</em></u></h2>
-                <p>
-                    Your profile will help other students understand what you know
-                    and what kind of exchange you're looking for.
-                </p>
-
-                <ul class="form-tips">
-                    <li>Choose a skill you are comfortable teaching.</li>
-                    <li>Mention something you genuinely want to learn.</li>
-                    <li>Select your preferred way of meeting.</li>
-                    <li>Don't share unnecessary personal information.</li>
-                </ul>
-            </div>
-
-            <form class="skill-form">
-
-                <fieldset>
-                    <legend>Basic Information</legend>
-
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="name">Full Name</label>
-                            <input type="text" id="name" name="name" placeholder="Enter your name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">College Email</label>
-                            <input type="email" id="email" name="email" placeholder="nameroll@sst.scaler.com" required>
-                        </div>
-                    </div>
-
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="year">Year</label>
-                            <select id="year" name="year">
-                                <option value="">Select year</option>
-                                <option>1st Year</option>
-                                <option>2nd Year</option>
-                                <option>3rd Year</option>
-                                <option>4th Year</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="branch">Branch</label>
-                            <select id="branch" name="Branch">
-                                <option>Computer Science</option>
-                                <option>CSE AiMl</option>
-                                <option>CSE & Buiseness</option>
-                            </select>
-                        </div>
-                    </div>
-                </fieldset>
-
-                <fieldset>
-                    <legend>Skill Exchange</legend>
-
-                    <div class="form-group">
-                        <label for="teach">What can you teach?</label>
-                        <select id="teach" name="teach">
-                            <option value="">Select a skill</option>
-                            <option>C / C++</option>
-                            <option>Python</option>
-                            <option>Web Development</option>
-                            <option>Flute</option>
-                            <option>Guitar</option>
-                            <option>Photography</option>
-                            <option>Graphic Design</option>
-                            <option>Video Editing</option>
-                            <option>Other</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="learn">What do you want to learn?</label>
-                        <select id="learn" name="learn">
-                            <option value="">Select a skill</option>
-                            <option>C / C++</option>
-                            <option>Python</option>
-                            <option>Web Development</option>
-                            <option>Flute</option>
-                            <option>Guitar</option>
-                            <option>Photography</option>
-                            <option>Graphic Design</option>
-                            <option>Video Editing</option>
-                            <option>Other</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="description">Describe your experience about your skill</label>
-                        <textarea id="description" name="description" rows="5"
-                            placeholder="For example: I have been playing guitar for two years..."></textarea>
-                    </div>
-                </fieldset>
-
-                <fieldset>
-                    <legend>Preferences</legend>
-
-                    <div class="form-group">
-                        <p class="form-label">Preferred method</p>
-                        <div class="radio-group">
-                            <label><input type="radio" name="mode" value="online"> Online</label>
-                            <label><input type="radio" name="mode" value="offline"> Offline</label>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <p class="form-label">Available days</p>
-                        <div class="checkbox-group">
-                            <label><input type="checkbox" name="day" value="Monday"> Monday</label>
-                            <label><input type="checkbox" name="day" value="Tuesday"> Tuesday</label>
-                            <label><input type="checkbox" name="day" value="Wednesday"> Wednesday</label>
-                            <label><input type="checkbox" name="day" value="Thursday"> Thursday</label>
-                            <label><input type="checkbox" name="day" value="Friday"> Friday</label>
-                            <label><input type="checkbox" name="day" value="Saturday"> Saturday</label>
-                            <label><input type="checkbox" name="day" value="Sunday"> Sunday</label>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="contact">Preferred way to be contacted</label>
-                        <input type="text" id="contact" name="contact" placeholder="College email / Whatsapp No.">
-                    </div>
-                </fieldset>
-
-                <button type="submit" class="submit-button">Submit Skill</button>
-
-            </form>
-        </section>
-
-    </main>
-
-    <footer>
-        <div class="footer-content">
-            <div class="logo">Skill<span>Swap</span></div>
-            <p>Learn something. Teach something.</p>
+    <header>
+        <div class="container nav-bar"> <a href="index.html" class="brand"> Skill<span>Swap</span> </a>
+            <nav> <a href="index.html">Home</a> <a href="explore.html">Explore</a> <a href="offer.html" class="current">
+                    Offer a Skill </a> </nav>
         </div>
-        <p class="copyright">SCALER SCHOOL OF TECHNOLOGY</p>
+    </header>
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <p class="label">SHARE YOUR KNOWLEDGE</p>
+                <h1>What can you teach?</h1>
+                <p> Tell other students about a skill that you are comfortable teaching. </p>
+            </div>
+        </section>
+        <section class="form-section">
+            <div class="container form-layout">
+                <div class="form-intro">
+                    <p class="label">SKILLSWAP</p>
+                    <h2>Everyone knows something useful.</h2>
+                    <p> Your skill does not have to be advanced. If you understand something well enough to explain it,
+                        you can share it with another student. </p>
+                    <div class="tip-box"> <strong>Example</strong>
+                        <p> "I know basic Python and can help someone understand loops and functions." </p>
+                    </div>
+                </div>
+                <form class="skill-form"> <!-- Name -->
+                    <div class="form-group"> <label for="name"> Your name </label> <input type="text" id="name"
+                            name="name" placeholder="Enter your name" required> </div> <!-- Course -->
+                    <div class="form-group"> <label for="course"> Course / class </label> <input type="text" id="course"
+                            name="course" placeholder="Example: CSE" required> </div> <!-- Skill -->
+                    <div class="form-group"> <label for="skill"> Skill you want to teach </label> <input type="text"
+                            id="skill" name="skill" placeholder="Example: Python" required> </div> <!-- Level -->
+                    <div class="form-group"> <label for="level"> Your level </label> <select id="level" name="level"
+                            required>
+                            <option value=""> Select your level </option>
+                            <option value="beginner"> Beginner </option>
+                            <option value="intermediate"> Intermediate </option>
+                            <option value="advanced"> Advanced </option>
+                        </select> </div> <!-- Radio Buttons -->
+                    <div class="form-group"> <label> How would you prefer to teach? </label>
+                        <div class="radio-group"> <label class="option-item"> <input type="radio" name="teaching_mode"
+                                    value="online" required> <span>Online</span> </label> <label class="option-item">
+                                <input type="radio" name="teaching_mode" value="in-person"> <span>In Person</span>
+                            </label> <label class="option-item"> <input type="radio" name="teaching_mode" value="both">
+                                <span>Both</span> </label> </div>
+                    </div> <!-- Checkboxes -->
+                    <div class="form-group"> <label> What can you help students with? </label>
+                        <div class="checkbox-group"> <label class="option-item"> <input type="checkbox" name="help_type"
+                                    value="concepts"> <span>Understanding concepts</span> </label> <label
+                                class="option-item"> <input type="checkbox" name="help_type" value="projects">
+                                <span>Projects</span> </label> <label class="option-item"> <input type="checkbox"
+                                    name="help_type" value="assignments"> <span>Assignments</span> </label> <label
+                                class="option-item"> <input type="checkbox" name="help_type" value="exam-preparation">
+                                <span>Exam preparation</span> </label> </div>
+                    </div> <!-- Description -->
+                    <div class="form-group"> <label for="description"> What can you teach? </label> <textarea
+                            id="description" name="description" rows="5"
+                            placeholder="Describe what another student can learn from you..." required></textarea>
+                    </div> <!-- Availability -->
+                    <div class="form-group"> <label for="availability"> When are you usually available? </label> <input
+                            type="text" id="availability" name="availability"
+                            placeholder="Example: Weekends after 4 PM"> </div> <!-- Agreement Checkbox -->
+                    <div class="form-group">  </div> <!-- Submit --> <button type="submit"
+                        class="btn primary full-width"> Submit My Skill </button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container footer-content">
+            <div> <a href="index.html" class="brand"> Skill<span>Swap</span> </a>
+                <p>Students learning from students.</p>
+            </div>
+            <p>SCALER SCHOOL OF TECHNOLOGY</p>
+        </div>
     </footer>
-
 </body>
+
 </html>
